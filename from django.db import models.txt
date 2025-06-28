@@ -1,0 +1,12 @@
+from django.db import models
+
+# Create your models here.
+class Cliente(models.Model):
+    nome = models.CharField('Nome', max_length=100)
+    Sobrenome = models.CharField('Sobrenome', max_length=100)
+    Email = models.CharField('Email', max_length=100)
+
+class Produto(models.Model):
+    nome = models.CharField('nome', max_length=100)
+    preco = models.CharField('preco', max_length=100)
+    estoque = models.CharField('estoque', max_length=100)
